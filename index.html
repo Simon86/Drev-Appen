@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drev Appen</title>
+<link rel="stylesheet" href="css/themes/android-theme.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.structure-1.3.0.min.css" />
+<link rel="stylesheet" href="css/main.css">
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.3.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/drevapp.js"></script>
+</head>
+<body>
+<div data-role="page" id="resultat" data-theme="c">
+  <div data-role="header" data-position="fixed" data-theme="c">
+    <h1>Drev Appen</h1>
+  </div>
+  <div data-role="content">
+    
+    <label for="hastighet">Nuvarande hastighet: (km/h)</label>
+    <input type="number" name="hastighet" id="hastighet" placeholder="30" value=""  />    
+    <h3>Befintlig Drevning:</h3>
+    <label for="framderv">Framdrev:</label>
+    <input type="number" name="framdrev" id="framdrev" placeholder="11" value=""  />
+    <label for="bakdrev">Bakdrev:</label>
+    <input name="bakderv" type="number" id="bakdrev" placeholder="52" value=""  />
+    <h3>Ny Drevning:</h3>
+    <label for="ny_framderv">Framdrev:</label>
+    <input type="number" name="ny_framdrev" id="ny_framdrev" placeholder="14" value=""  />
+    <label for="ny_bakdrev">Bakdrev:</label>
+    <input type="number" name="ny_bakderv" id="ny_bakdrev" placeholder="40" value=""  />
+    <button data-role="button" onclick="berakna()">Beräkna ny hastighet</button>
+<p id="out_procent">Föränding i Procent:</p>
+<p id="out_ny_hastighet">Beräknad ny hastighet:</p>
+  </div>
+</div>
+</body>
+</html>
